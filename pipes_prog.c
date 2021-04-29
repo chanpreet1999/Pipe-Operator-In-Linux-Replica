@@ -10,11 +10,11 @@ void error(char *errorMsg);
 
 /*
 -----------------------------
-| fileno |  stream name   	|
+| fileno |  stream name     |
 |---------------------------|
-|   0	 |	standard input	|
-|   1	 |	standard output	|
-|   2	 |	standaed error	|
+|   0	 |standard input    |
+|   1	 |standard output   |
+|   2	 |standaed error    |
 -----------------------------
 
 */
@@ -52,10 +52,6 @@ int main(int argc, int argv[])
 	char line[255];
 	while(fgets( line, 255, stdin )) {
 		printf( "Received data from child : %s", line );
-		if(line[0] == '\0')
-		{
-			printf( "The content received is : %s", line );
-		}	
 	}
 
 	return 0;
